@@ -34,7 +34,7 @@ To run this project locally, follow these steps:
 2. Use the contact form to reach out to me.
 
 ## Project Structure
-portfolio/
+my-portfolio/
 │
 ├── index.html
 │
