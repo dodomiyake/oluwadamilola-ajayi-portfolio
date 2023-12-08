@@ -19,6 +19,7 @@ You can access the live demo of my portfolio website at [john-doe-portfolio.com]
 
 ![icons8-html-5-144](https://github.com/dodomiyake/my-portfolio/assets/70576110/2af60f5b-446d-4c6f-be74-f531a311dbd0)
 - HTML5
+  
 ![icons8-css3-144](https://github.com/dodomiyake/my-portfolio/assets/70576110/1516d506-f23f-4055-80ad-6472996a84f5)
 - CSS3 (For styling)
 
