@@ -34,6 +34,7 @@ To run this project locally, follow these steps:
 2. Use the contact form to reach out to me.
 
 ## Project Structure
+```
 my-portfolio/
 │
 ├── index.html
@@ -43,7 +44,7 @@ my-portfolio/
 │
 └── images/
   └── [image files...]
-
+```
 
 ## Contact
 
