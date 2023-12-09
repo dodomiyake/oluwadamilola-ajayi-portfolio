@@ -81,21 +81,21 @@ header {
 
 .name img {
     border: 2px solid rgba(0, 0, 0, 0.8);
-    width: 200px;
-    height: 200px;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     margin-bottom: 15px;
 }
 
-.name h5 {
+/* Select different child under the same parent */
+.name :is(h5,p) {
     color: #adadad;
-    margin-left: 10px;
+    margin-left: 35px;
 }
 
 .name p {
-    color: #adadad;
     font-size: 0.9rem;
-    margin-left: 10px;
 }
 
 .bio {
