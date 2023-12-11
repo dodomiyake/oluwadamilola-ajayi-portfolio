@@ -1,9 +1,12 @@
 :root {
-    --blue-color: #026186;
-    --nav-bar-bg: rgb(37, 37, 37);
-    --bg-color: rgb(15, 15, 15);
-    --ft-color: white;
-    --btn-color: #adadad;
+    --gray: #1d1d1d;
+    --black: #0f0f0f;
+    --off-black: #161616;
+    --white: white;
+    --off-white: #dfdfdf;
+    --off-gray: #818181;
+    --lt-gray: #494949;
+    --dk-gray: #2e2e2e;
 }
 
 * {
@@ -12,112 +15,169 @@
     box-sizing: border-box;
 }
 
-body {
+
+html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--black);
 }
 
-/* Fixed position for the header */
+main {
+    margin: 0 auto;
+}
+
 header {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-}
-
-.logo {
-    width: 38px;
-    height: 38px;
-    margin: 15px 80px;
-}
-
-/* changed my nav bar to row and created space between the logo and the nav links  */
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--nav-bar-bg);
+    background-color: var(--gray);
+    text-align: center;
     width: 100%;
 }
 
-
-/* change the elements to rows and removed the dot */
-.nav-list {
-    display: flex;
-    font-size: 15px;
-    gap: 5rem;
-    list-style: none;
-    margin: 25px 80px;
+nav {
+    background-color: var(--dk-gray);
 }
 
-/* remove underlines from the anchor tag */
-.nav-list li a{
-    color: var(--ft-color);
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+}
+
+.nav-list {
+    font-size: 15px;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-list li {
+    border-bottom: 1px solid var(--off-gray);
+    padding: 15px;
+
+}
+
+.nav-list li a {
+    color: var(--white);
     text-decoration: none;
     cursor: pointer;
 }
 
-/* create a hover on the anchor tag */
-.nav-list li a:hover{
-    color: #7e7e7e;
-}
-
 .landing {
-    background-color: var(--bg-color);
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 23%;
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-    gap: 4.5rem;
-}
-
-.name {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+    
 }
 
 .name img {
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin: 40px 0 30px 0;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8%;
-    justify-items: center;
+.bio h1 {
+    color: var(--off-white);
+    margin: 0 10px 20px 10px;
 }
 
-.bio h1{
-    color: #adadad;
-    margin-bottom: 15px;
-}
-
-.bio p{
-    color: var(--btn-color);
+.bio p {
+    color: var(--off-gray);
     font-size: 0.9rem;
-    text-align: justify;
-    line-height: 20px;
-    text-justify: inter-word;
+    margin-bottom: 30px;
 }
 
 .bio a {
-    color: var(--bg-color);
-    margin-top: 30px;
+    color: var(--black);
     padding: 8px;
-    background-color: var(--btn-color);
+    background-color: var(--off-white);
     width: 35%;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 15px;
+}
+
+section.About {
     text-align: center;
+    margin-top: 25px;
+    padding: 20px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    background-color: var(--off-black); 
+    overflow: hidden;
+}
+
+.About h3 {
+    color: var(--off-white);
+    margin-bottom: 15px;
+}
+
+.horizontal-line {
+    margin: auto;
+    width: 200px;
+    height: 1px;
+    background-color: var(--dk-gray);
+}
+
+.About p {
+    color: var(--off-white);
+    margin: 20px 0;
+}
+
+section.Work {
+    text-align: center;
+    padding: 20px;
+}
+
+.Work h3 {
+    color: var(--off-white);
+    margin-bottom: 15px;
+}
+
+.Work p {
+    color: var(--off-white);
+    margin-top: 20px;
+}
+
+section.Contact {
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    background-color: var(--off-black);
+}
+
+.Contact h3 {
+    color: var(--off-white);
+    margin-bottom: 15px;
+}
+
+.Contact p {
+    color: var(--off-white);
+    margin-top: 20px;
+}
+
+.contact-list ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.contact-list ul li{
+    margin: 15px 0;
+}
+
+.contact-list li a{
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    color: var(--off-gray);
 }
