@@ -67,7 +67,7 @@ nav {
     text-align: center;
     padding: 15px;
     overflow: hidden;
-    
+
 }
 
 .name img {
@@ -106,7 +106,7 @@ section.About {
     padding: 20px;
     border-top: 1px solid var(--gray);
     border-bottom: 1px solid var(--gray);
-    background-color: var(--off-black); 
+    background-color: var(--off-black);
     overflow: hidden;
 }
 
@@ -142,6 +142,78 @@ section.Work {
     margin-top: 20px;
 }
 
+#image-grid {
+    margin: 5% 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "work1"
+        "work2"
+        "work3"
+        "work4"
+        "work5"
+        "work6"
+    ;
+}
+
+#work1 {
+    grid-area: work1;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+#work2 {
+    grid-area: work2;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+#work3 {
+    grid-area: work3;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+#work4 {
+    grid-area: work4;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+#work5 {
+    grid-area: work5;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+#work6 {
+    grid-area: work6;
+    background-image: url("../images/htmlcss.jpg");
+}
+
+.imagegridarea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.image-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: var(--off-white);
+    font-size: 18px;
+    border-bottom: 3px solid var(--off-white);
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.imagegridarea:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
 section.Contact {
     text-align: center;
     margin-top: 25px;
@@ -166,11 +238,11 @@ section.Contact {
     margin: 15px 0;
 }
 
-.contact-list ul li{
+.contact-list ul li {
     margin: 15px 0;
 }
 
-.contact-list li a{
+.contact-list li a {
     text-decoration: none;
     color: var(--off-white);
 }
