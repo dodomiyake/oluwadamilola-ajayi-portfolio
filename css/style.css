@@ -38,6 +38,10 @@ header {
     transition: 0.3s;
 }
 
+.nav-bar {
+    height: 100px;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -48,6 +52,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: var(--gray);
+    width: 300px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.nav-list li {
+    width: 100%;
+    border-top: 0.5px solid rgba(223, 223, 223, 0.02);
+    border-bottom: 0.5px solid rgba(223, 223, 223, 0.02);
 }
 
 .nav-list li a {
@@ -127,30 +149,6 @@ nav {
     box-shadow: -20px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
-.nav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    background-color: var(--gray);
-    width: 300px;
-    height: 100%;
-    padding-top: 100px;
-}
-
-.nav-list li {
-    width: 100%;
-    border-top: 0.5px solid rgba(223, 223, 223, 0.02);
-    border-bottom: 0.5px solid rgba(223, 223, 223, 0.02);
-}
-
-.nav-list li a
-    {
-    padding: 30px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-}
 
 .hamburger,
 .toggle-menu {
@@ -223,7 +221,7 @@ section.About {
     height: 25opx;
 }
 
-.aboutme-container p {
+.aboutme-container p, h3{
     color: var(--off-white);
     margin: 20px 0;
 }
@@ -366,7 +364,7 @@ footer {
         margin-left: 30px;
     }
     .nav-bar {
-        height: 96px;
+        height: 16.1%;
     }
 
     .nav-list {
@@ -464,7 +462,7 @@ footer {
         align-items: center;
         justify-content: center;
         height: 350px;
-        margin: 0 30px 50px 30px;
+        margin: 30px 30px 50px 30px;
     }
 
     .aboutme-container img {
