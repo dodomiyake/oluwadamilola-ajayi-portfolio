@@ -217,7 +217,13 @@ section.About {
     background-color: var(--dk-gray);
 }
 
-.About p {
+.aboutme-container img {
+    margin-top: 30px;
+    width: 250px;
+    height: 25opx;
+}
+
+.aboutme-container p {
     color: var(--off-white);
     margin: 20px 0;
 }
@@ -415,28 +421,28 @@ footer {
     .bio {
         display: flex;
         flex-direction: column;
-        margin-top: 18%;
+        margin-top: 15%;
         justify-items: center;
     }
     
     .bio h1{
-        color: #adadad;
+        color: var(--off-white);
         text-align: left;
     }
     
     .bio p{
-        color: var(--btn-color);
-        font-size: 0.9rem;
+        color: var(--off-gray);
+        font-size: 0.8rem;
         text-align: justify;
         line-height: 20px;
         text-justify: inter-word;
+        margin-left: 10px;
     }
     
     .bio a {
         color: var(--bg-color);
-        margin-top: 30px;
         padding: 8px;
-        background-color: var(--btn-color);
+        background-color: var(--off-gray);
         width: 35%;
         text-decoration: none;
         border-radius: 5px;
@@ -446,9 +452,89 @@ footer {
     }
     
     .bio a:hover {
-        background-color: var(--nav-bar-bg);
-        color: var(--btn-color);
-        transition: ;
+        background-color: var(--dk-gray);
+        color: var(--off-white);
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .aboutme-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        margin: 0 30px 50px 30px;
+    }
+
+    .aboutme-container img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;        
+        object-fit: cover;
+    }
+
+    .aboutme-container h3 {
+        margin-top: 30px;
+    }
+    
+    .aboutme-container p {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 17px;
+    }
+
+
+    #image-grid {
+        margin: 3% 5% 0 5%;
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-areas:
+            "work1 work2 work3"
+            "work4 work5 work6"
+        ;
+    }
+
+    #work1 {
+        grid-area: work1;
+        background-image: url("../images/htmlcss.jpg");
+    }
+    
+    #work2 {
+        grid-area: work2;
+        background-image: url("../images/htmlcss2.jpg");
+    }
+    
+    #work3 {
+        grid-area: work3;
+        background-image: url("../images/reactjs.jpg");
+    }
+    
+    #work4 {
+        grid-area: work4;
+        background-image: url("../images/htmlcss.jpg");
+    }
+    
+    #work5 {
+        grid-area: work5;
+        background-image: url("../images/htmlcss.jpg");
+    }
+    
+    #work6 {
+        grid-area: work6;
+        background-image: url("../images/htmlcss.jpg");
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-list ul {
+        display: flex;
+        gap: 50px;
     }
 
 }
