@@ -17,7 +17,6 @@
     text-decoration: none;
 }
 
-
 html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
@@ -25,6 +24,8 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     background-color: var(--black);
+    scroll-behavior: smooth;
+    transition: container 0.5s ease;
 }
 
 header {
@@ -380,6 +381,8 @@ footer {
     .nav-list li {
         display: flex;
     }
+    
+
 
     .hamburger,
     .toggle-menu {
