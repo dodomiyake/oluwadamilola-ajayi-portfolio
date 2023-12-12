@@ -51,6 +51,7 @@ my-portfolio/
 ### Link to deployed application
 https://dodomiyake.github.io/oluwadamilola-ajayi-portfolio
 
+![image](https://github.com/dodomiyake/oluwadamilola-ajayi-portfolio/assets/70576110/45816b6a-b044-4138-a6c3-d09513e1ab7e)
 
 ## Contact
 
