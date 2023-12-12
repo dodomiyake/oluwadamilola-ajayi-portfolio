@@ -48,6 +48,9 @@ my-portfolio/
 └── images/
   └── [image files...]
 ```
+### Link to deployed application
+https://dodomiyake.github.io/oluwadamilola-ajayi-portfolio
+
 
 ## Contact
 
