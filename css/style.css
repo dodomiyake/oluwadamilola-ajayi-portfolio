@@ -30,7 +30,7 @@ html, body {
 
 header {
     background-color: var(--gray);
-    position: relative;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -41,6 +41,7 @@ header {
 
 .nav-bar {
     height: 100px;
+    position: fixed;
 }
 
 .logo {
@@ -161,7 +162,7 @@ nav {
     text-align: center;
     padding: 15px;
     overflow: hidden;
-
+    margin-top: 90px;
 }
 
 .name img {
@@ -240,6 +241,10 @@ section.Work {
 .Work p {
     color: var(--off-white);
     margin-top: 20px;
+}
+
+.Work a {
+    color: var(--off-white);
 }
 
 #image-grid {
@@ -366,6 +371,7 @@ footer {
     }
     .nav-bar {
         height: 16.1%;
+        position: relative;
     }
 
     .nav-list {
@@ -391,14 +397,14 @@ footer {
 
     .landing {
         background-color: var(--bg-color);
-        height: 500px;
+        height: 400px;
     }
 
     .container {
         display: flex;
         justify-content: center;
+        bottom: 80px;
         position: relative;
-        top: 3%;
         width: 800px;
         margin: 0 auto;
         gap: 2.5rem;
